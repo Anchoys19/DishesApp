@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:spacing="8dp">
+
+        <!-- Заголовок -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Вибір посуду"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:textColor="#333333"/>
+
+        <!-- Спінер: список посуду -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Посуд:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#555555"/>
+
+        <Spinner
+            android:id="@+id/spinnerDishes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp"/>
+
+        <!-- Група прапорів: Виробник -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Виробник:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#555555"
+            android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"
+            android:padding="12dp">
+
+            <CheckBox
+                android:id="@+id/cbManufacturer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BergHOFF"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/cbManufacturer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tefal"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/cbManufacturer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tramontina"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <!-- Група прапорів: Діапазон цін -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Діапазон цін:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#555555"
+            android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"
+            android:padding="12dp">
+
+            <CheckBox
+                android:id="@+id/cbPrice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="До 500 грн"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/cbPrice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500 – 1500 грн"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/cbPrice3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Понад 1500 грн"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <!-- Кнопка ОК -->
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ОК"
+            android:textSize="18sp"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Поле результату -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Результат:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#555555"/>
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="120dp"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:textSize="15sp"
+            android:textColor="#222222"
+            android:hint="Тут з'явиться результат вибору..."
+            android:gravity="top"/>
+
+    </LinearLayout>
+</ScrollView>
